@@ -3,7 +3,7 @@ using namespace std;
 
 void seiveprime(int n,int count){
 
-    int prime[100]={0};
+    int prime[n+1]={0};
     
     for(int i=2;i<=n;i++){
         if(prime[i]==0){
