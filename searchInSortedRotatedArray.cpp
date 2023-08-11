@@ -15,7 +15,7 @@ int getPivot(int arr[],int n){
         }
         mid = start + (end-start)/2;
     }
-    return arr[start];
+    return start;
 }
 
 int binarySearch(int arr[],int start,int n,int key)
@@ -50,11 +50,11 @@ int findPosition(int arr[],int n,int key){
 
 int main()
 {
-    int arr[5]= {1,0,1,1,1};
+    int arr[19]= {1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1};
 
-    cout<<"pivot is "<<getPivot(arr,5)<<endl;
+    cout<<"pivot is "<<getPivot(arr,19)<<endl;
 
-    if (findPosition(arr,5,0)==-1){
+    if (findPosition(arr,19,2)==-1){
         cout<<"key is absent"<<endl;
     }
     else{

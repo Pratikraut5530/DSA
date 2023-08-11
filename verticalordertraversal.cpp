@@ -1,6 +1,8 @@
 #include<iostream>
 #include<queue>
 #include<stack>
+#include<map>
+#include<utility>
 
 using namespace std;
 
@@ -36,8 +38,33 @@ node* buildTree(node* root){
     return root;
 }
 
-void verticalOrderTraversal(node* root){
+vector<int> verticalOrderTraversal(node* root){
+    map<int,map<int,vector<int>>> nodes;
+    queue<pair<node*,pair<int,int>>> q;
+    vector<int> ans;
+
+    if(root==NULL){
+        return ans;
+    }
+
+    q.push(make_pair(root,make_pair(0,0)));
     
+    while(!q.empty()){
+        pair<node*,pair<int,int>> temp=q.front();
+
+        node* frontNode = temp.first;
+        int hd=temp.second.first;
+        int lvl = temp.second.second;
+
+        nodes[hd][lvl].insert(frontNode->data);
+
+        if(frontNode->left){
+            q.push(make_pair(frontNode->left,make_pair(hd-1),lvl+1));
+
+        }
+        
+    }
+
 }
 
 node* buildFromLevelOrder(node* &root){
