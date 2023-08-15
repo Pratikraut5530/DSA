@@ -146,7 +146,7 @@ int main()
 
     // cout<<"Head "<<head -> data <<endl;
     // cout<<"Tail "<<tail -> data <<endl;
-    Node *node1 = new Node(1);
+    Node *node1 = new Node( 1);
     Node* head = node1;
     Node *tail = node1;
 
@@ -155,8 +155,8 @@ int main()
     insertatTail(tail,4);
     print(head);
 
-    swapInPairs(head);
-    print(head);
+    // swapInPairs(head);
+    // print(head);
 
 
     return 0;
