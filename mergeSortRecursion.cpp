@@ -68,7 +68,7 @@ void mergeSort(int arr[],int s,int e){
 int main()
 {
     int arr[6]={3,2,1,6,9,11};
-    int n=6;
+    int n=6     ;
 
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" "; 
