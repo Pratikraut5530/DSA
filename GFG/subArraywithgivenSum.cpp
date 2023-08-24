@@ -34,7 +34,7 @@ vector<int> subarraySum(vector<int>arr, int n, long long s)
             j++;
         }
         return {-1};
-    }
+    }   
 
 int main()
 {
