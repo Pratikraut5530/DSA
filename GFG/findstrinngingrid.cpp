@@ -2,10 +2,10 @@
 #include<vector>
 using namespace std;
 
-bool traverse(int row,int col,vector<vector<char>> grid,vector<vector<int>> &ans,int cnt,string word){
+void traverse(int row,int col,vector<vector<char>> grid,vector<vector<int>> &ans,int cnt,string word){
         
     if(grid[row][col]==word[word.length()-1]){
-        return false;
+        return ;
     }
         
     int wordlen = word.length();
@@ -23,7 +23,9 @@ bool traverse(int row,int col,vector<vector<char>> grid,vector<vector<int>> &ans
             } 
         }
     }
-    return true;
+
+    ans[row][0].push_back(row);
+    ans[row][col+1].push
 }
 
 vector<vector<int>>searchWord(vector<vector<char>>grid, string word){
