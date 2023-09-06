@@ -2,7 +2,7 @@
 using namespace std;
 
 int isPalindrome(char  S[]){   
-    int n = sizeof(S)/sizeof(char);
+    int n = S.length();
         
     int start = 0;
     int end= n-1;
