@@ -20,7 +20,7 @@ void seiveprime(int n,int count){
             count++;
         }
     }
-
+k
     cout<<count<<endl;
 }
 
