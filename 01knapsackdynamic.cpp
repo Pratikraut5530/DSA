@@ -23,7 +23,7 @@ int f(int ind,int W,vector<int> &wt,vector<int> &val,vector<vector<int>> &dp){
 }
 
 int knapsack(vector<int> weight,vector<int> value,int n,int maxWeight){
-    //memoisation
+    //memoisation   
     vector<vector<int>> dp(n,vector<int> (maxWeight+1,-1));
     return f(n-1,maxWeight,weight,value,dp);
 }
