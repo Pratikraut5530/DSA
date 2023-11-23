@@ -7,7 +7,7 @@ int f(int ind,int W,vector<int> &wt,vector<int> &val,vector<vector<int>> &dp){
     if(ind == 0){
         if(wt[0]<=W){
             return val[0];
-        }
+        }   
         return 0;
     }
 
