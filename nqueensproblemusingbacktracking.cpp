@@ -10,7 +10,6 @@ void addSolution(vector<vector<int>> &ans,vector<vector<int>> &board,int n){
             temp.push_back(board[i][j]);
         }
     }
-
     ans.push_back(temp);
 }
 
